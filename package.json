@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-arn-parser": "^1.0.1",
+    "aws-arn": "^1.0.1",
     "aws-sdk": "^2.773.0",
     "esm": "^3.2.25",
     "inquirer": "^7.3.3"
