@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "lambda_watch_logs": "bin/lambda_watch_logs"
+    "lambda_watch_logs": "bin/watch-lambda-logs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
