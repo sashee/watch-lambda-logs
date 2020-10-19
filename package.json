@@ -1,0 +1,20 @@
+{
+  "name": "lambda_logs_watch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "lambda_watch_logs": "bin/lambda_watch_logs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-arn-parser": "^1.0.1",
+    "aws-sdk": "^2.773.0",
+    "esm": "^3.2.25",
+    "inquirer": "^7.3.3"
+  }
+}
