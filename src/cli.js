@@ -3,13 +3,14 @@ import {exec} from "child_process";
 import inquirer from "inquirer";
 import AWS from "aws-sdk";
 import arnParser from "aws-arn";
+import _ from "lodash/fp";
 
 const getFunctionFromTerraform = async () => {
 	const filterDeepObject = (iteratee) => (root) => {
 		if (Array.isArray(root)) {
-			return [...root.map(filterDeepObject(iteratee))].flat();
+			return _.flatten([...root.map(filterDeepObject(iteratee))]);
 		}else if (root !== null && typeof root === "object") {
-			return [iteratee(root) ? [root] : [], ...Object.values(root).map(filterDeepObject(iteratee))].flat();
+			return _.flatten([iteratee(root) ? [root] : [], ...Object.values(root).map(filterDeepObject(iteratee))]);
 		}else {
 			return [];
 		}

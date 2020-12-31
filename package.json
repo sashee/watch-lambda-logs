@@ -2,7 +2,12 @@
   "name": "watch-lambda-logs",
   "version": "1.0.1",
   "description": "Continuously query logs for a Lambda function",
-	"keywords": ["aws", "lambda", "logs", "development tools"],
+  "keywords": [
+    "aws",
+    "lambda",
+    "logs",
+    "development tools"
+  ],
   "main": "index.js",
   "bin": {
     "lambda_watch_logs": "bin/watch-lambda-logs"
@@ -10,16 +15,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-	"repository": "github:sashee/watch-lambda-logs",
-	"author": {
-		"name": "Tamas Sallai",
-		"url": "https://advancedweb.hu/"
-	},
+  "repository": "github:sashee/watch-lambda-logs",
+  "author": {
+    "name": "Tamas Sallai",
+    "url": "https://advancedweb.hu/"
+  },
   "license": "ISC",
   "dependencies": {
     "aws-arn": "^1.0.1",
     "aws-sdk": "^2.773.0",
     "esm": "^3.2.25",
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.20"
   }
 }
