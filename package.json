@@ -1,6 +1,6 @@
 {
   "name": "watch-lambda-logs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Continuously query logs for a Lambda function",
   "keywords": [
     "aws",
